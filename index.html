@@ -24,6 +24,7 @@
       -webkit-backdrop-filter: blur(12px);
       border: 1px solid rgba(255, 255, 255, 0.2);
     }
+    ::-webkit-details-marker { display: none; }
     body { font-family: 'Outfit', sans-serif; }
     h1, h2, h3, .font-serif { font-family: 'Playfair Display', serif; }
   </style>
@@ -81,10 +82,8 @@
       <!-- Image / Graphic Area -->
       <div class="w-full lg:w-1/2 relative flex justify-center" data-aos="fade-up" data-aos-delay="200">
         <!-- Hero Image -->
-        <div class="w-[320px] h-[400px] md:w-[420px] md:h-[500px] rounded-[2rem] overflow-hidden shadow-2xl border-4 border-white/30 bg-white flex items-center justify-center relative">
-          <!-- We use the logo or the group photo here -->
+        <div class="w-full max-w-[500px] lg:max-w-[600px] aspect-[4/3] rounded-[2rem] overflow-hidden shadow-2xl relative">
           <img src="img/clinicanascita.png" alt="Equipe Clínica Nascitá" class="w-full h-full object-cover">
-          <div class="absolute inset-0 border border-white/20 rounded-[2rem] pointer-events-none"></div>
         </div>
       </div>
     </div>
@@ -212,67 +211,90 @@
         <p class="text-[#6b6b6b]">Informações importantes para o seu acompanhamento médico.</p>
       </div>
 
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+      <div class="space-y-4 max-w-4xl mx-auto">
         <!-- FAQ 1 -->
-        <div class="bg-[#faf8f7] p-8 rounded-2xl border border-[#ecdcd1] hover:shadow-lg transition-shadow" data-aos="fade-up">
-          <h3 class="text-xl font-bold text-[#4a4a4a] mb-4">Diferença entre infertilidade e esterilidade</h3>
-          <p class="text-[#6b6b6b] text-sm leading-relaxed mb-3">
-            Infertilidade ocorre quando um casal tem dificuldade em engravidar após um período de atividade sexual contínua. Com tratamento ou reprodução assistida, é possível realizar o sonho da parentalidade.
-          </p>
-          <p class="text-[#6b6b6b] text-sm leading-relaxed">
-            Esterilidade, por outro lado, é a incapacidade de produzir gametas ou embriões viáveis para gerar um bebê. A avaliação por um especialista é crucial, e nenhuma classificação implica uma sentença definitiva.
-          </p>
-        </div>
+        <details class="group bg-[#faf8f7] rounded-2xl border border-[#ecdcd1] p-6 hover:shadow-lg transition-all duration-300" data-aos="fade-up">
+          <summary class="flex justify-between items-center cursor-pointer font-bold text-xl text-[#4a4a4a] list-none">
+            Qual a diferença entre infertilidade e esterilidade?
+            <span class="transition group-open:rotate-180 text-[#a68a7c]">
+              <svg fill="none" height="24" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" width="24"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"></path></svg>
+            </span>
+          </summary>
+          <div class="text-[#6b6b6b] mt-4 text-sm leading-relaxed space-y-3">
+            <p>Infertilidade ocorre quando um casal tem dificuldade em engravidar após um período de atividade sexual contínua. Com tratamento ou reprodução assistida, é possível realizar o sonho da parentalidade.</p>
+            <p>Esterilidade, por outro lado, é a incapacidade de produzir gametas ou embriões viáveis para gerar um bebê. A avaliação por um especialista é crucial, e nenhuma classificação implica uma sentença definitiva.</p>
+          </div>
+        </details>
+
         <!-- FAQ 2 -->
-        <div class="bg-[#faf8f7] p-8 rounded-2xl border border-[#ecdcd1] hover:shadow-lg transition-shadow" data-aos="fade-up" data-aos-delay="100">
-          <h3 class="text-xl font-bold text-[#4a4a4a] mb-4">Porquê consultar um profissional especializado antes de iniciar as tentativas de gestação?</h3>
-          <p class="text-[#6b6b6b] text-sm leading-relaxed mb-3">
-            A consulta pré-concepcional avalia a saúde da mulher de forma completa, identificando possíveis condições que possam impactar a fertilidade ou o desenvolvimento saudável da gestação.
-          </p>
-          <p class="text-[#6b6b6b] text-sm leading-relaxed">
-            Essa preparação ajuda a corrigir eventuais deficiências nutricionais e orientar sobre hábitos que aumentam as chances de gravidez. Você terá mais confiança sabendo que está cuidando da sua saúde desde o início.
-          </p>
-        </div>
+        <details class="group bg-[#faf8f7] rounded-2xl border border-[#ecdcd1] p-6 hover:shadow-lg transition-all duration-300" data-aos="fade-up">
+          <summary class="flex justify-between items-center cursor-pointer font-bold text-xl text-[#4a4a4a] list-none">
+            Por que consultar um profissional especializado antes de engravidar?
+            <span class="transition group-open:rotate-180 text-[#a68a7c]">
+              <svg fill="none" height="24" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" width="24"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"></path></svg>
+            </span>
+          </summary>
+          <div class="text-[#6b6b6b] mt-4 text-sm leading-relaxed space-y-3">
+            <p>A consulta pré-concepcional avalia a saúde da mulher de forma completa, identificando possíveis condições que possam impactar a fertilidade ou o desenvolvimento saudável da gestação.</p>
+            <p>Essa preparação ajuda a corrigir eventuais deficiências nutricionais e orientar sobre hábitos que aumentam as chances de gravidez. Você terá mais confiança sabendo que está cuidando da sua saúde desde o início.</p>
+          </div>
+        </details>
+
         <!-- FAQ 3 -->
-        <div class="bg-[#faf8f7] p-8 rounded-2xl border border-[#ecdcd1] hover:shadow-lg transition-shadow" data-aos="fade-up" data-aos-delay="200">
-          <h3 class="text-xl font-bold text-[#4a4a4a] mb-4">Como minimizar os efeitos da menopausa na minha região íntima?</h3>
-          <p class="text-[#6b6b6b] text-sm leading-relaxed mb-3">
-            A menopausa traz mudanças naturais ao corpo, incluindo a região íntima, que pode sofrer com ressecamento, perda de elasticidade e desconforto. No entanto, existem formas eficazes de minimizar esses efeitos.
-          </p>
-          <p class="text-[#6b6b6b] text-sm leading-relaxed">
-            Tratamentos especializados podem ajudar a restaurar a hidratação, elasticidade e funcionalidade da região, proporcionando mais conforto e qualidade de vida.
-          </p>
-        </div>
+        <details class="group bg-[#faf8f7] rounded-2xl border border-[#ecdcd1] p-6 hover:shadow-lg transition-all duration-300" data-aos="fade-up">
+          <summary class="flex justify-between items-center cursor-pointer font-bold text-xl text-[#4a4a4a] list-none">
+            Como minimizar os efeitos da menopausa na minha região íntima?
+            <span class="transition group-open:rotate-180 text-[#a68a7c]">
+              <svg fill="none" height="24" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" width="24"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"></path></svg>
+            </span>
+          </summary>
+          <div class="text-[#6b6b6b] mt-4 text-sm leading-relaxed space-y-3">
+            <p>A menopausa traz mudanças naturais ao corpo, incluindo a região íntima, que pode sofrer com ressecamento, perda de elasticidade e desconforto. No entanto, existem formas eficazes de minimizar esses efeitos.</p>
+            <p>Tratamentos especializados podem ajudar a restaurar a hidratação, elasticidade e funcionalidade da região, proporcionando mais conforto e qualidade de vida.</p>
+          </div>
+        </details>
+
         <!-- FAQ 4 -->
-        <div class="bg-[#faf8f7] p-8 rounded-2xl border border-[#ecdcd1] hover:shadow-lg transition-shadow" data-aos="fade-up" data-aos-delay="300">
-          <h3 class="text-xl font-bold text-[#4a4a4a] mb-4">O que é o Parto humanizado?</h3>
-          <p class="text-[#6b6b6b] text-sm leading-relaxed mb-3">
-            O parto humanizado respeita a autonomia da gestante, permitindo que ela seja a protagonista do processo de nascimento. As decisões são tomadas em conjunto, sempre baseadas na medicina baseada em evidências.
-          </p>
-          <p class="text-[#6b6b6b] text-sm leading-relaxed">
-            A intervenção médica só ocorre quando é realmente necessária, garantindo a segurança da mãe e do bebê, sem deixar de lado o conforto e o bem-estar da mulher.
-          </p>
-        </div>
+        <details class="group bg-[#faf8f7] rounded-2xl border border-[#ecdcd1] p-6 hover:shadow-lg transition-all duration-300" data-aos="fade-up">
+          <summary class="flex justify-between items-center cursor-pointer font-bold text-xl text-[#4a4a4a] list-none">
+            O que é o Parto Humanizado?
+            <span class="transition group-open:rotate-180 text-[#a68a7c]">
+              <svg fill="none" height="24" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" width="24"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"></path></svg>
+            </span>
+          </summary>
+          <div class="text-[#6b6b6b] mt-4 text-sm leading-relaxed space-y-3">
+            <p>O parto humanizado respeita a autonomia da gestante, permitindo que ela seja a protagonista do processo de nascimento. As decisões são tomadas em conjunto, sempre baseadas na medicina baseada em evidências.</p>
+            <p>A intervenção médica só ocorre quando é realmente necessária, garantindo a segurança da mãe e do bebê, sem deixar de lado o conforto e o bem-estar da mulher.</p>
+          </div>
+        </details>
+
         <!-- FAQ 5 -->
-        <div class="bg-[#faf8f7] p-8 rounded-2xl border border-[#ecdcd1] hover:shadow-lg transition-shadow" data-aos="fade-up" data-aos-delay="400">
-          <h3 class="text-xl font-bold text-[#4a4a4a] mb-4">Testes de farmácia são definitivos?</h3>
-          <p class="text-[#6b6b6b] text-sm leading-relaxed mb-3">
-            Para dissipar dúvidas rapidamente, muitas mulheres recorrem ao teste rápido de farmácia antes de consultar um médico. Embora sejam confiáveis, esses testes não determinam definitivamente a gestação.
-          </p>
-          <p class="text-[#6b6b6b] text-sm leading-relaxed">
-            Para uma confirmação mais precisa, é necessário realizar o exame de sangue beta HCG.
-          </p>
-        </div>
+        <details class="group bg-[#faf8f7] rounded-2xl border border-[#ecdcd1] p-6 hover:shadow-lg transition-all duration-300" data-aos="fade-up">
+          <summary class="flex justify-between items-center cursor-pointer font-bold text-xl text-[#4a4a4a] list-none">
+            Os testes rápidos de farmácia são definitivos?
+            <span class="transition group-open:rotate-180 text-[#a68a7c]">
+              <svg fill="none" height="24" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" width="24"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"></path></svg>
+            </span>
+          </summary>
+          <div class="text-[#6b6b6b] mt-4 text-sm leading-relaxed space-y-3">
+            <p>Para dissipar dúvidas rapidamente, muitas mulheres recorrem ao teste rápido de farmácia antes de consultar um médico. Embora sejam confiáveis, esses testes não determinam definitivamente a gestação.</p>
+            <p>Para uma confirmação mais precisa, é necessário realizar o exame de sangue beta HCG.</p>
+          </div>
+        </details>
+
         <!-- FAQ 6 -->
-        <div class="bg-[#faf8f7] p-8 rounded-2xl border border-[#ecdcd1] hover:shadow-lg transition-shadow" data-aos="fade-up" data-aos-delay="500">
-          <h3 class="text-xl font-bold text-[#4a4a4a] mb-4">Métodos de longa duração (DIU e Implanon)</h3>
-          <p class="text-[#6b6b6b] text-sm leading-relaxed mb-3">
-            Os métodos contraceptivos de longa duração, como o DIU e o implante, são opções eficazes para quem busca praticidade e segurança. Eles são aplicados uma única vez e fornecem proteção por um longo período.
-          </p>
-          <p class="text-[#6b6b6b] text-sm leading-relaxed">
-            Esses métodos não exigem o uso diário, o que oferece conveniência. Ambos são reversíveis, permitindo o retorno à fertilidade quando for desejado.
-          </p>
-        </div>
+        <details class="group bg-[#faf8f7] rounded-2xl border border-[#ecdcd1] p-6 hover:shadow-lg transition-all duration-300" data-aos="fade-up">
+          <summary class="flex justify-between items-center cursor-pointer font-bold text-xl text-[#4a4a4a] list-none">
+            Quais são os métodos contraceptivos de longa duração?
+            <span class="transition group-open:rotate-180 text-[#a68a7c]">
+              <svg fill="none" height="24" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" width="24"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"></path></svg>
+            </span>
+          </summary>
+          <div class="text-[#6b6b6b] mt-4 text-sm leading-relaxed space-y-3">
+            <p>Os métodos contraceptivos de longa duração, como o DIU e o implante (Implanon), são opções eficazes para quem busca praticidade e segurança. Eles são aplicados uma única vez e fornecem proteção por um longo período.</p>
+            <p>Esses métodos não exigem o uso diário, o que oferece conveniência. Ambos são reversíveis, permitindo o retorno à fertilidade quando for desejado.</p>
+          </div>
+        </details>
       </div>
     </div>
   </section>
