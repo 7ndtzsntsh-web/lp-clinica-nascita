@@ -1,5 +1,16 @@
 {
   "cleanUrls": true,
+  "redirects": [
+    { "source": "/:page(consulta-pre-concepcao|tratamento-de-disturbios-menstruais|rastreamento-e-tratamento-de-dsts|ultrassom-obstetrico-inicial|ultrassom-ginecologico-transvaginal|tratamento-de-candidiase-de-repeticao|acompanhamento-pre-natal|acompanhamento-pos-parto|parto-humanizado|insercao-de-diu-guiado-por-us|insercao-de-implanon|citologia-oncotica|consulta-ginecologica|enfermagem-obstetrica-especializada|rejuvenescimento-intimo-e-estetica-genital|energias-e-novas-tecnologias-em-ginecologia|fisioterapia-pos-parto-imediato)", "destination": "/#servicos", "permanent": true },
+    { "source": "/:page(consulta-pre-concepcao|tratamento-de-disturbios-menstruais|rastreamento-e-tratamento-de-dsts|ultrassom-obstetrico-inicial|ultrassom-ginecologico-transvaginal|tratamento-de-candidiase-de-repeticao|acompanhamento-pre-natal|acompanhamento-pos-parto|parto-humanizado|insercao-de-diu-guiado-por-us|insercao-de-implanon|citologia-oncotica|consulta-ginecologica|enfermagem-obstetrica-especializada|rejuvenescimento-intimo-e-estetica-genital|energias-e-novas-tecnologias-em-ginecologia|fisioterapia-pos-parto-imediato)/", "destination": "/#servicos", "permanent": true },
+    { "source": "/:page(gabriela-lima|dra-mikely-battistella)", "destination": "/#corpo-clinico", "permanent": true },
+    { "source": "/:page(gabriela-lima|dra-mikely-battistella)/", "destination": "/#corpo-clinico", "permanent": true },
+    { "source": "/clinica-nascita-sobre", "destination": "/#sobre", "permanent": true },
+    { "source": "/clinica-nascita-sobre/", "destination": "/#sobre", "permanent": true },
+    { "source": "/:page(sample-page|politica-de-cookies|politica-de-privacidade)", "destination": "/", "permanent": true },
+    { "source": "/:page(sample-page|politica-de-cookies|politica-de-privacidade)/", "destination": "/", "permanent": true },
+    { "source": "/:dir(category|author)/:rest*", "destination": "/", "permanent": true }
+  ],
   "headers": [
     {
       "source": "/(.*)",
@@ -10,7 +21,7 @@
         },
         {
           "key": "Strict-Transport-Security",
-          "value": "max-age=63072000; includeSubDomains; preload"
+          "value": "max-age=63072000"
         },
         {
           "key": "X-Content-Type-Options",
