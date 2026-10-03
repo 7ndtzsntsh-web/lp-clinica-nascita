@@ -9,7 +9,7 @@
     { "source": "/clinica-nascita-sobre/", "destination": "/#sobre", "permanent": true },
     { "source": "/:page(sample-page|politica-de-cookies|politica-de-privacidade)", "destination": "/", "permanent": true },
     { "source": "/:page(sample-page|politica-de-cookies|politica-de-privacidade)/", "destination": "/", "permanent": true },
-    { "source": "/:dir(category|author)/:rest*", "destination": "/", "permanent": true }
+    { "source": "/:dir(category|author)/(.*)", "destination": "/", "permanent": true }
   ],
   "headers": [
     {
